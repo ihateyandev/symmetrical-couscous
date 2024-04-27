@@ -716,6 +716,10 @@ public class DialogueWheelScript : MonoBehaviour
 		{
 			TaskDialogueWindow.SetActive(value: true);
 		}
+		if (Yandere.TargetStudent.StudentID == 30 && TaskManager.TaskStatus[13] == 1)
+		{
+			TaskDialogueWindow.SetActive(value: true);
+		}
 		if (!Yandere.StudentManager.Eighties && Yandere.TargetStudent.StudentID == 10 && TaskManager.TaskStatus[46] == 1 && Clock.Period != 3)
 		{
 			_ = Clock.Period;
