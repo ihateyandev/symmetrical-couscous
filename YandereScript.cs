@@ -6119,6 +6119,10 @@ public class YandereScript : MonoBehaviour
 				{
 					Subtitle.UpdateLabel(SubtitleType.TaskInquiry, 6, 5f);
 				}
+				else if (TargetStudent.StudentID == 30)
+				{
+					Subtitle.UpdateLabel(SubtitleType.TaskInquiry, 9, 5f);
+				}
 			}
 			else
 			{

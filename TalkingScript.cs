@@ -1626,6 +1626,11 @@ public class TalkingScript : MonoBehaviour
 						S.Subtitle.UpdateLabel(SubtitleType.TaskInquiry, 8, 8f);
 					}
 				}
+				else if (S.StudentID == 30)
+				{
+					S.CharacterAnimation.CrossFade("f02_lookdown_00");
+					S.Subtitle.UpdateLabel(SubtitleType.TaskInquiry, 10, 8f);
+				}
 			}
 			else if (Input.GetButtonDown(InputNames.Xbox_A))
 			{
@@ -1636,6 +1641,10 @@ public class TalkingScript : MonoBehaviour
 				S.CharacterAnimation.CrossFade(IdleAnim);
 			}
 			if (S.CharacterAnimation["f02_nod_00"].time >= S.CharacterAnimation["f02_nod_00"].length)
+			{
+				S.CharacterAnimation.CrossFade(IdleAnim);
+			}
+			if (S.CharacterAnimation["f02_lookdown_00"].time >= S.CharacterAnimation["f02_lookdown_00"].length)
 			{
 				S.CharacterAnimation.CrossFade(IdleAnim);
 			}
@@ -1662,6 +1671,10 @@ public class TalkingScript : MonoBehaviour
 					S.Mentoring = true;
 					S.InEvent = true;
 					S.Hurry = true;
+				}
+				else if (S.StudentID == 30)
+				{
+					Debug.Log("Set it up so Koka pussy does her thing");
 				}
 				S.DialogueWheel.End();
 			}

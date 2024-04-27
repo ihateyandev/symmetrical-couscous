@@ -1392,6 +1392,8 @@ public class SubtitleScript : MonoBehaviour
 			ClubLateClips[3] = ClubLateClips[13];
 			ClubYesClips[3] = ClubYesClips[13];
 			ClubNoClips[3] = ClubNoClips[13];
+			TaskInquiries[9] = "change ur hair stupid bitch";
+			TaskInquiries[10] = "Oh no! Kizana is sad about my hair? she can go fuck herself.";
 		}
 		SubtitleClipArrays = new SubtitleTypeAndAudioClipArrayDictionary
 		{
